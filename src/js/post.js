@@ -85,7 +85,7 @@ export const POST_DATA = [
         "categories": ["LifeStyle"],
         "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         "link": "https://example.com/post11",
-        "image": "assets/post_image.jpg"
+        "image": "https://lasallemontemolin.es/wp-content/uploads/2021/01/placeholder.png"
     },
     {
         "id": 12,
