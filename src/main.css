@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --breakpoint: 576px;
+  }
+.navbar {
+    background-color: #343a40;
+    padding: 10px 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    color: #fff;
+  }
+
+  .navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .nav-link,a {
+    color: #000000; 
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  ul {
+    list-style: none;
+}
+
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    background-color: #343a40;
+    padding: 10px 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    color: #fff;
+  }
+
+  .navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-right: 15px;
+  }
+
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+
+.navbar-toggler{
+    display: none;
+}
+  /* Media query para el menú hamburguesa */
+  @media (max-width: 576px) {
+    .navbar-toggler {
+      display: block;
+    }
+
+  }
+
+  section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .main-content {
+    flex: 80;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  .side-content {
+    z-index: 10;
+    flex: 0 0 20%;
+    background-color: darkgray;
+    width: 100%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  .buttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 20px;
+}
+
+.container-card {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    display: inline-block;
+    height: auto;
+    margin: 10px;
+}
+.card-image{
+    width: 100px;
+    height: auto;
+}
+
+/* Media Queries para hacer el diseño completamente receptivo */
+@media (max-width: 1200px) {
+    .container-card {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .container-card {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .container-card {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-toggler {
+        display: block;
+    }
+    .side-content {
+        flex: 0 0 30%;
+        background-color: darkgray;
+        width: 100%;
+    }
+}
+
+
+.card-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-categories {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    margin-bottom: 10px;
+}
+
+.readMoreButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.readMoreButton:hover {
+    background-color: #0056b3;
+}
+.side-content {
+    z-index: 10;
+    flex: 0 0 20%;
+    background-color: darkgray;
+    width: 100%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+@media (max-width: 576px) {
+    .side-content {
+        display: none;
+    }
+}
+
+/* Media query para el menú hamburguesa */
+@media (max-width: 576px) {
+    .navbar-toggler {
+        display: block;
+    }
+    .side-content.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        overflow-y: auto;
+    }
+}

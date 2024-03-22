@@ -1,0 +1,36 @@
+# Technical Test Development
+
+This is a project developed for a technical test. It is a responsive website, although some functionalities are still missing.
+
+## Technologies Used
+
+The project uses the following technologies:
+
+- HTML
+- CSS
+- JavaScript
+- Webpack
+
+## How to Run the Application
+
+To run the application locally, follow these steps:
+
+1. Clone this repository to your local machine.
+
+2. Install the project dependencies using npm:
+
+
+3. Compile and create a production package using the following command:
+
+
+This command will run Webpack in production mode, create a `dist` folder with all the necessary files, and minify them.
+
+4. Once the compilation is complete, you can start the development server by running:
+
+
+This will start the local server and open the application in your default browser.
+
+## Additional Notes
+
+- Make sure you have Node.js and npm installed on your system before starting.
+- You can adjust the Webpack configuration as needed in the `webpack.config.js` file.
